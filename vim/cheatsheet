@@ -1,0 +1,25 @@
+{
+}
+p
+r
+d2w
+dw
+d$
+dd
+2w
+x
+ce
+c<motion>
+c$
+w$
+CTRL-G
+<line number>G
+/
+?
+([{ then %
+:s/old/new/g
+:%s/old/new/g
+:%s/old/new/gc
+:!<cmd>
+
+
