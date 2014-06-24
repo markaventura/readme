@@ -21,5 +21,15 @@ CTRL-G
 :%s/old/new/g
 :%s/old/new/gc
 :!<cmd>
-
+:!rm <file>
+v
+while on visual mode, press : type w <filename>
+:r <filename>
+o
+O
+a
+:set ic
+:set noic
+:set hlsearch
+:nohlsearch
 

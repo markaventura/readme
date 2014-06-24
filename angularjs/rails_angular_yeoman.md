@@ -1,5 +1,5 @@
 # Rails + Angular + Yeoman
-Creating web app using **Rails** as server-side framework and
+Steps in creating web app using **Rails** as server-side framework and
 **Angular** as the client-side framework using **Yeoman** for the client
 side dependency management, building, testing and workflow management.
 
@@ -29,4 +29,4 @@ side dependency management, building, testing and workflow management.
     yo angular
     npm install && bower install
     ```
-6. Change **dist** in Gruntfile.js to **../publi**
+6. Change **dist** in Gruntfile.js to **../public**
