@@ -62,7 +62,7 @@ side dependency management, building, testing and workflow management.
     ```
     foreman start
     ```
-### Note
+#### Note
 The benefits of not including the angular files into the rails app:
 
 1. Configures test environment (karma)
