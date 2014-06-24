@@ -29,6 +29,7 @@ side dependency management, building, testing and workflow management.
     yo angular
     npm install && bower install
     ```
+
 #### How to Connect Rails and AngularJS
 1. Configure rails **'config/routes.rb'**
     ```
@@ -62,6 +63,7 @@ side dependency management, building, testing and workflow management.
     ```
     foreman start
     ```
+
 #### Note
 The benefits of not including the angular files into the rails app:
 
