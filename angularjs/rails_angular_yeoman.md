@@ -59,9 +59,9 @@ side dependency management, building, testing and workflow management.
     Grunt: grunt server
     ```
 7. Run Foreman
-   ```
-   foreman start
-   ```
+    ```
+    foreman start
+    ```
 ### Note
 The benefits of not including the angular files into the rails app:
 
