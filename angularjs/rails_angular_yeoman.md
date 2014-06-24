@@ -33,7 +33,8 @@ side dependency management, building, testing and workflow management.
 
 
 ### Note
-The benefit of not including the angular files into the rails app:
+The benefits of not including the angular files into the rails app:
+
 1. Configures test environment (karma)
 2. Organized folder structure made using generator-angular plugin
 3. Live Reload right out of box.
