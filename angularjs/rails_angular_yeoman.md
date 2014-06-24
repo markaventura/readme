@@ -29,9 +29,39 @@ side dependency management, building, testing and workflow management.
     yo angular
     npm install && bower install
     ```
-6. Change **dist** in Gruntfile.js to **../public**
-
-
+#### How to Connect Rails and AngularJS
+1. Configure rails **'config/routes.rb'**
+    ```
+    get '/', to: redirect('/')
+    ```
+2. Change **dist** in Gruntfile.js to **../public**
+    ```
+    dist: '../public'
+    ```
+3. Build grunt
+    ```
+    grunt build
+    ```
+4. Configure connect
+    ```
+    connect: {
+      proxies: [{
+        context: '/api',
+        host: 'localhost',
+        port: 3000
+      }]
+    }
+    ```
+5. Install [Foreman](https://github.com/ddollar/foreman)
+6. Configure Procfile inside angular directory
+    ```
+    Rails: cd ..; rails server
+    Grunt: grunt server
+    ```
+7. Run Foreman
+   ```
+   foreman start
+   ```
 ### Note
 The benefits of not including the angular files into the rails app:
 
