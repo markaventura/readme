@@ -1,4 +1,4 @@
-Bower(http://bower.io/)
+[Bower](http://bower.io/)
 ### Install Bower
 ```
 npm install -g bower
