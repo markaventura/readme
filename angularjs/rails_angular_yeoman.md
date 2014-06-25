@@ -72,3 +72,4 @@ The benefits of not including the angular files into the rails app:
 3. Live Reload right out of box.
 4. Easy to integrate frontened frameworks such as Foundation or
    Bootstrap.
+
