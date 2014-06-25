@@ -15,3 +15,8 @@ bower init
 bower install
 ```
 
+Save the package to the package file **bower.json**
+```
+bower install <package> --save-dev
+```
+
