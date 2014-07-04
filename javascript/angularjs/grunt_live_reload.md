@@ -1,5 +1,7 @@
 ## Live Reload configuration for grunt
 1.  Install  [grunt-connect-proxy](https://github.com/drewzboto/grunt-connect-proxy)
+
+2. Configure middleware.
 ```
 //The actual grunt server settings
 connect: {
