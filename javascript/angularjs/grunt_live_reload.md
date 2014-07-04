@@ -13,8 +13,8 @@ connect: {
     host: 'localhost',
     port: 3000,
     https: false,
-    changeOrigin: true 
-  },      
+    changeOrigin: true
+  },
   livereload: {
     options: {
       open: true,
@@ -24,13 +24,10 @@ connect: {
       ],
       middleware: function (connect, options) {
         var middlewares = [];
-        var directory = options.directory ||
-options.base[options.base.length - 1];
+        var directory = options.directory || options.base[options.base.length - 1];
 
         // enable Angular's HTML5 mode
-        middlewares.push(modRewrite(['!\\.html|\\.js|\\.svg|\\.css|\\.png$
-/index.html [L]']));
-
+        middlewares.push(modRewrite(['!\\.html|\\.js|\\.svg|\\.css|\\.png$ /index.html [L]']));
         if (!Array.isArray(options.base)) {
           options.base = [options.base];
         }
@@ -43,7 +40,7 @@ options.base[options.base.length - 1];
         middlewares.push(
           connect().use(
             '/bower_components',
-            connect.static('./bower_components')            
+            connect.static('./bower_components')
           )
         )
 
@@ -56,7 +53,7 @@ options.base[options.base.length - 1];
         return middlewares;
       }
     }
-  },      
+  },
   test: {
     options: {
       port: 9001,
