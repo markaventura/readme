@@ -82,3 +82,17 @@ connect: {
   }
 }
 ```
+3. Include configureProxy in grunt task
+```
+grunt.registerTask('server', function (target) {
+   grunt.task.run([
+            'clean:server',
+            'compass:server',
+            'configureProxies:server',
+            'livereload-start',
+            'connect:livereload',
+            'open',
+            'watch'
+        ]);
+    });
+```
